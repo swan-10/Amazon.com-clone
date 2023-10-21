@@ -1,0 +1,343 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    border:  border-box; /* good practice...... now what-ever height and width we set, the padding and margin will all go inside it and not outside*/
+    margin: 0px;
+}
+
+/* Styling navigation bar */
+.navbar{
+    height: 60px;
+    color: white;
+    background-color: #0F1111;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+
+/* amazon logo */
+.nav-logo{
+    height: 50px;
+    width: 120px;
+}
+.amazon-logo{
+    height: 100%;
+    width: 100%;
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    position: relative;
+    bottom: 7px;
+}
+
+/* Second element */
+.nav-loc{
+    align-items: center; 
+    height: 50px;
+    padding: 0 9px;
+}
+.loc-pos{
+    position: relative;
+    top: 7px;
+}
+.india{
+    display: flex;
+    font-weight: 700;
+}
+.loc-up{
+    font-size: 0.8rem;
+    color: #CCCCCC;
+    margin-left: 15px;
+}
+.loc-down{
+    font-size: 1rem;
+    color: white;
+    margin-left: 3px;
+}
+
+/* Third element*/
+.nav-search{
+    justify-content: space-evenly;
+    display: flex;
+    background-color: #febd68;
+    height: 40px;
+    width: 780px;
+    border-radius: 5px;
+}
+.nav-search:focus-within{
+    border: 2px solid orange;
+}
+.search-select{
+    background-color: #F3F3F3;
+    color: #0F1111;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search-input:focus{
+    outline-style: none;
+}
+.search-input:hover{
+    cursor: text;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    color: #0F1111;
+    border-radius: 0 5px 5px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+/* fourth element*/
+.nav-lang{
+    display: flex;
+    /* width: 74px; */
+    height: 47px;
+    /* align-items: baseline; */
+    /* padding-top: 40px; */
+    padding-left: 9px;
+    padding-right: 9px;
+}
+.lang-flag{
+    background-image: url("Flag_India.webp");
+    background-size: cover;
+    height: 15px;
+    width: 22.5px;
+    /* align-items: center; */
+    position: relative;
+    top: 18px;
+}
+.lang-en{
+    font-size: 15px;
+    color: #FFF;
+    font-weight: 700;
+    margin-left: 3px;
+    width: 20.84px;
+    height: 17px;
+    /* align-items: center; */
+    position: relative;
+    top: 18px;
+}
+
+/* 5th and 6th */
+.nav-signin{
+    height: 47px;
+    padding: 0 9px;
+}
+.signin-pos{
+    position: relative;
+    top: 7px;
+}
+.nav-first{
+    font-size: 0.8rem;
+}
+.nav-second{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* 7th element */
+.nav-cart{
+    height: 47px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0 9px;
+}
+.nav-cart i{
+    font-size: 1.8rem;
+}
+.cart-pos{
+    position: relative;
+    top: 11px;
+}
+
+
+/* PANEL */
+.panel{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #232F3E;
+    height: 39px;
+    color: #FFF;
+}
+
+
+.panel-options{
+    width: 93%;
+    height: 100%;
+}
+.panel-options p{
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 0.85rem;
+    /* height: 36px; */
+    position: relative;
+    top: 10px;
+}
+.panel-all i{
+    font-size: large;
+}
+.panel-all{
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 8px 9px;
+    display: flex;
+}
+.panel-all p{
+    position: relative;
+    margin-left: 3px;
+    top: 2px;
+}
+
+/* HERO section */
+.hero-img{
+    background-image: url("hero-img2.jpg");
+    background-size: cover;
+    height: 380px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.hero-link{
+    background-color: #F5F6F6;
+    height: 40px;
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    margin-bottom: 25px;
+} 
+.hero-link a{
+    color: #007185;
+    text-decoration: none;
+}
+.hero-link a:hover{
+    color: #C7511F;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* SHOP section */
+.shop{
+    background-color: #E3E6E6;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.box{
+    width: 20%;
+    background-color: white;
+    height: 390x;
+    padding: 20px 18px 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* border-radius: 10px; */
+}
+.shop-img{
+    height: 300px;
+    background-size: cover;
+    margin: 1rem 0 1rem;
+}
+.box a{
+    color: #007185;
+    font-size: 0.85rem;
+}
+.box a:hover{
+    color: #C7511F;
+    cursor: pointer;
+}
+
+
+/* Footer design */
+.panel1{
+    color: white;
+    background-color: #37475a;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+.panel1:hover{
+    background-color: #37475ae9;
+    cursor: pointer;
+}
+
+
+
+.panel2{
+    color: white;
+    background-color: #222f3d;
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    height: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.panel2 p{
+    color: #ddd;
+    margin-top: 10px;
+    font-size: 0.90rem;
+}
+.panel2 ul{
+    margin-top: 30px;
+}
+.panel2 p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+.panel3{
+    height: 70px;
+    background-color: #222f3d;
+    border-top: 0.1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel-logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 120px;
+    position: relative;
+    bottom: 5px;
+}
+.panel-logo:hover{
+    cursor: pointer;
+}
+
+
+
+.panel4{
+    background-color: #131A22;
+    font-size: 0.7rem;
+    color: white;
+    text-align: center;
+    height: 80px;
+}
+.panel4 .panel-tp{
+    padding-top: 25px;
+}
+.panel4 .panel-bt{
+    padding-top: 5px;
+}
